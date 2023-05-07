@@ -11,13 +11,14 @@
 #
 class Flower < ApplicationRecord
   validates :flower_type, presence: true
-  
+
   belongs_to :gardener,
-  foreign_key: :gardener_id,
-  class_name: :User
+      foreign_key: :gardener_id,
+      class_name: :User,
+      inverse_of: :flowers
 
 
   belongs_to :garden,
-  foreign_key: :garden_id,
-  class_name: :Garden
+      foreign_key: :garden_id,
+      class_name: :Garden
 end

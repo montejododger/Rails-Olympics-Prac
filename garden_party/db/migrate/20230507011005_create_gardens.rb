@@ -11,3 +11,4 @@ class CreateGardens < ActiveRecord::Migration[7.0]
     add_index :gardens, [:name, :garden_owner_id], unique: true
   end
 end
+

@@ -5,9 +5,9 @@
 #  id              :bigint           not null, primary key
 #  name            :string           not null
 #  size            :integer          not null
-#  garden_owner_id :bigint           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  garden_owner_id :bigint
 #
 require 'rails_helper'
 
